@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- @include head.html -->
+  <title>Menu — Sukoon, Vesu, Surat</title>
+  <meta name="description" content="The full Sukoon menu with prices: soups, salads, pasta, pizza, rice bowls, North Indian, coffee, matcha and coolers. All vegetarian, 43 dishes can be made Jain." />
+  <meta property="og:title" content="Menu — Sukoon, Vesu, Surat" />
+  <meta property="og:description" content="The full Sukoon menu with prices: soups, salads, pasta, pizza, rice bowls, North Indian, coffee, matcha and coolers. All vegetarian, 43 dishes can be made Jain." />
+</head>
+<body data-page="menu">
+<!-- @include top.html -->
+
+  <main id="main">
+    <!-- PAGE HEADER -->
+    <section class="phero" data-phero>
+      <div class="phero__ghost" aria-hidden="true">सुकून</div>
+      <div class="phero__copy">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Menu</span></nav>
+        <h1 class="phero__title" data-split>One kitchen, <em>131 ways in.</em></h1>
+        <p class="phero__lede" data-reveal>Italian, pan-Asian and North Indian from the kitchen; espresso, manual brews, matcha and coolers from the bar. Everything vegetarian, prices exactly as printed.</p>
+      </div>
+      <figure class="phero__frame">
+        <img src="/img/pasta-rose-lg.webp" srcset="/img/pasta-rose-sm.webp 820w, /img/pasta-rose-lg.webp 1800w" sizes="(max-width: 800px) 84vw, 38vw" alt="Pasta Rosé with grilled garlic bread" fetchpriority="high" />
+      </figure>
+      <p class="phero__index" aria-hidden="true"><b>०२</b> / ०४ — menu</p>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu" data-menu>
+      <div class="menu__card">
+        <header class="menu__head">
+                    <h2 class="menu__title">menu</h2>
+          <p class="menu__legend">
+            <span><i class="tag tag--j">J</i> can be made Jain</span>
+            <span><i class="tag tag--c" aria-hidden="true"><svg viewBox="0 0 20 18"><path d="M5 15h10v2H5zM4.5 13.5C2 13 1 11 1.5 9S4 6 5.5 6.5C6 4 8 2.5 10 2.5S14 4 14.5 6.5C16 6 18 7 18.5 9s-.5 4-3 4.5z" /></svg></i> chef's special</span>
+            <span><i class="tag tag--s" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M14 3c1 1 1.5 2 1 3.2C17 8 17 12 13.5 15.5 10 19 4 18.5 3 17.5c3-.5 6-2.5 7.5-5.5 1.2-2.4 1.5-4.3 2.4-5.4C12.5 5 13 4 14 3z" /></svg></i> spicy</span>
+          </p>
+        </header>
+
+        <div class="menu__controls">
+          <div class="tabs" role="tablist">
+            <button role="tab" aria-selected="true" data-tab="kitchen">Kitchen</button>
+            <button role="tab" aria-selected="false" data-tab="bar">Coffee &amp; Bar</button>
+            <span class="tabs__ink" aria-hidden="true"></span>
+          </div>
+          <div class="filters" data-filters>
+            <button aria-pressed="false" data-filter="j">Jain</button>
+            <button aria-pressed="false" data-filter="c">Chef's specials</button>
+            <button aria-pressed="false" data-filter="s">Spicy</button>
+          </div>
+          <label class="search">
+            <span class="visually-hidden">Search the menu</span>
+            <input type="search" placeholder="paneer, pesto, matcha…" data-search autocomplete="off" />
+          </label>
+        </div>
+
+        <nav class="menu__jump" data-jump aria-label="Menu sections"></nav>
+        <div class="menu__body" data-menu-body></div>
+        <p class="menu__empty" data-menu-empty hidden>Nothing matches that. Try another word, or just ask us.</p>
+        <p class="menu__foot">Prices in ₹, as on our printed menu, and may change. Do tell your server about allergies.</p>
+      </div>
+    </section>
+
+    <!-- NEXT PAGE -->
+    <a class="next" href="space.html">
+      <span class="next__label">Next page</span>
+      <span class="next__title">The space <svg viewBox="0 0 24 12" aria-hidden="true"><path d="M0 6h22M17 1l5 5-5 5" /></svg></span>
+      <span class="next__img" aria-hidden="true"><img src="/img/hall-sm.webp" alt="" loading="lazy" /></span>
+    </a>
+  </main>
+
+<!-- @include footer.html -->
+  <script type="module" src="/src/pages/menu.js"></script>
+</body>
+</html>
